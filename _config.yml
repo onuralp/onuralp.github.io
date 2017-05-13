@@ -1,0 +1,35 @@
+# Permalinks
+permalink:           pretty
+
+# Setup
+title:               Onuralp Taner
+tagline:             Software Architect @CicekSepeti.
+url:                 http://onuralptaner.com
+paginate:            1
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Onuralp Taner
+  url:               https://twitter.com/onuralptaner
+  email:             onuralp@hotmail.com
+
+# Custom vars
+version:             1.0.0
+github:
+  repo:              https://github.com/onuralp/onuralp.github.io
+google_analytics:    
+twitter:             onuralptaner
+github:              onuralp
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
