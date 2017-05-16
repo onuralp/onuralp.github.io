@@ -22,30 +22,37 @@
       <div class="content-section">
 
         <p>
-          I'm Onuralp Taner, a software architect at <a href="https://www.ciceksepeti.com">CicekSepeti</a>. Focusus on .Net Core, Go, AWS, Azure, Docker, Kubernetes and ElasticSearch.
+          Hello, there. I'm Onuralp Taner a software architect at <a href="https://www.ciceksepeti.com">CicekSepeti.com</a> living in Istanbul.
+        </p>
+        <p>
+          At CicekSepeti, I'm part of a team which works on migrating complex monolith applications to microservices (developed
+          using Golang and .Net Core). By using golang we had the chance to work and develop with Kubernetes, which lowered
+          our resource use significantly.
+        </p>
+        <p>
+          Before this, I provided solutions on ElasticSearch, caching and scalability on high traffic websites, which led to massive budget gains from aws, which
+          also led gains eventually from azure.
         </p>
 
       </div>
 
       <main>
         <div class="content-section">
-        <h2>Projects</h2>
-        {% assign projects = site.posts | where: "type", "project" %} 
-        {% for project in projects %}
-        <div class="project-post">
-          <h3><a href="{{ project.git }}">{{ project.title }}</a></h3>
-          {{ project.content }}
-        </div>
-        {% endfor %}
+          <h2>Projects</h2>
+          {% assign projects = site.posts | where: "type", "project" %} {% for project in projects %}
+          <div class="project-post">
+            <h3><a href="{{ project.git }}">{{ project.title }}</a></h3>
+            {{ project.content }}
+          </div>
+          {% endfor %}
         </div>
         <div class="content-section">
-        <h2>Talks</h2>
-        {% assign talks = site.posts | where: "type", "talk" %} 
-        {% for talk in talks %}
-        <div class="talk-post">
-          <p>* {{ talk.title }}</p>
-        </div>
-        {% endfor %}
+          <h2>Talks</h2>
+          {% assign talks = site.posts | where: "type", "talk" %} {% for talk in talks %}
+          <div class="talk-post">
+            <p>* {{ talk.title }}</p>
+          </div>
+          {% endfor %}
         </div>
       </main>
 
