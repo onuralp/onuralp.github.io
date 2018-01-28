@@ -1,0 +1,26 @@
+version: 2
+stages:
+  build:
+    docker:
+      - image: circleci/build-image
+    workdir: /home/circleci/project
+
+    steps:
+      - type: checkout
+      - setup_remote_docker
+
+      - run:
+          name: Build service
+          command: |
+            sh ./.build/build.sh           
+
+       - run:
+           name: Tests
+           command: |
+            bash ./.build/run.sh
+
+      - deploy:
+          name: Push image to ecr
+          command: |
+            set -x
+            bash ./.build/push.sh
