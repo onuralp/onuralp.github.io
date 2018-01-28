@@ -14,7 +14,7 @@ stages:
           command: |
             sh ./.build/build.sh           
 
-       - run:
+      - run:
            name: Tests
            command: |
             bash ./.build/run.sh
