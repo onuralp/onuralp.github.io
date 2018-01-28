@@ -2,7 +2,7 @@ version: 2
 stages:
   build:
     docker:
-      - image: circleci/build-image
+      - image: circleci/builder-base
     workdir: /home/circleci/project
 
     steps:
