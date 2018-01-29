@@ -1,5 +1,5 @@
 version: 2
-stages:
+jobs:
   build:
     docker:
       - image: circleci/builder-base
@@ -24,3 +24,30 @@ stages:
           command: |
             set -x
             bash ./.build/push.sh
+
+  deploy:
+    working_directory: /
+    docker:
+      - image: google/cloud-sdk
+    steps:
+      - run:
+          name: Deploy to GCE
+          command: |
+            echo $GCE_SERVICE | base64 --decode --ignore-garbage > ${HOME}/gcloud-service-key.json
+            export GOOGLE_APPLICATION_CREDENTIALS=${HOME}/gcloud-service-key.json
+            gcloud auth activate-service-account --key-file ${HOME}/gcloud-service-key.json            
+            gcloud container clusters get-credentials digidentity --zone europe-west4-c --project api-project-132697350705
+
+            kubectl rolling-update website --image=onuralp/website:$CIRCLE_BUILD_NUM
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
