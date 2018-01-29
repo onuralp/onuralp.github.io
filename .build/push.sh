@@ -3,7 +3,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 NAME=onuralp/website
-TAG=$CIRCLE_BUILD_NUM
+TAG=$CIRCLE_SHA1
 
 docker tag $NAME $NAME:$TAG
 
