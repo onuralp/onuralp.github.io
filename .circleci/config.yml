@@ -38,7 +38,7 @@ jobs:
             gcloud auth activate-service-account --key-file ${HOME}/gcloud-service-key.json            
             gcloud container clusters get-credentials digidentity --zone europe-west4-c --project api-project-132697350705
 
-            kubectl rolling-update website --image=onuralp/website:$CIRCLE_BUILD_NUM
+            kubectl set image deployment/website website=website:$CIRCLE_BUILD_NUM
 
 workflows:
   version: 2
