@@ -33,15 +33,6 @@
 
       <main>
         <div class="content-section">
-          <h2>Projects</h2>
-          {% assign projects = site.posts | where: "type", "project" %} {% for project in projects %}
-          <div class="project-post">
-            <h3><a href="{{ project.git }}">{{ project.title }}</a></h3>
-            {{ project.content }}
-          </div>
-          {% endfor %}
-        </div>
-        <div class="content-section">
           <h2>Talks</h2>
           <p>I love sharing my experiences on software engineering at conferences, meetups, universities and companies.</p>
           {% assign talks = site.posts | where: "type", "talk" %} {% for talk in talks %}
