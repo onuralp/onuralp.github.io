@@ -4,8 +4,6 @@ RUN	gem install \
 	github-pages \
 	jekyll-paginate
 
-
-
 EXPOSE 4000
 
 RUN mkdir /site
