@@ -8,12 +8,8 @@ RUN	gem install \
 
 EXPOSE 4000
 
-COPY . /site
+RUN mkdir /site
 RUN chown -R jekyll /site
 WORKDIR /site
-
-# workaround 
-# https://talk.jekyllrb.com/t/load-error-cannot-load-such-file-webrick/5417/4
-RUN bundle add webrick
 
 CMD ["/site/start.sh"]

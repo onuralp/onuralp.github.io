@@ -1,6 +1,24 @@
 # Personal web site
 
-## Run this project local
+## Getting Started
+
+### With docker
+
+1. Run the following command to build the docker image.
+
+    ```sh
+    sh ./.build/build.sh
+    ```
+
+2. Run the command will map your local files to the image and serve the site.
+
+    ```sh
+    sh ./.build/run.sh
+    ```
+
+3. Visit http://localhost:4000
+
+## local setup
 
 1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
 2. Clone down your fork `git clone https://github.com/yourusername/yourusername.github.io.git`
