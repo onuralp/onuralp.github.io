@@ -18,13 +18,13 @@ sass:
 # About/contact
 author:
   name:              Onuralp Taner
-  url:               https://twitter.com/onuralptaner
+  url:               https://twitter.com/onuralp
   email:             onuralp@hotmail.com
 
 # Custom vars
 version:             1.1.0
 google_analytics:    UA-99319481-1
-twitter:             onuralptaner
+twitter:             onuralp
 github:              onuralp
 
 # Gems
