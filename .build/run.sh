@@ -1,2 +1,2 @@
 set -x
-docker run --volume="$PWD:/site" -p 4000:4000 onuralp/website
+docker run --volume="$PWD:/site" -p 4004:4000 onuralp/website

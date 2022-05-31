@@ -11,12 +11,12 @@
     ```sh
     docker run --rm \
         --volume="$PWD:/srv/jekyll:Z" \
-        -p 4000:4000 \
+        -p 4004:4000 \
         jekyll/jekyll \
         jekyll build
     ```
 
-2. Visit http://localhost:4000
+2. Visit http://localhost:4004
 
 ## local setup
 
