@@ -27,6 +27,15 @@ google_analytics:    UA-99319481-1
 twitter:             onuralp
 github:              onuralp
 
+meta:
+  robots:              index, follow
+  keywords:            Onuralp Taner, Cloud Computing, DevOps, Contractor
+  classification:      Personal
+  expires:             never
+  distribution:        Global
+  rating:              General
+  language:            English
+
 # Gems
 plugins:
   - jekyll-paginate
