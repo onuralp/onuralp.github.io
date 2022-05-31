@@ -10,8 +10,11 @@
 
       <header class="masthead">
         <h1>Hi, I'm Onuralp Taner</h1>
+        <p>
+          Find me as @onuralp on <strong id="typed"></strong>
+        </p>
       </header>
-
+     
     </div>
   </div>
 
@@ -70,6 +73,17 @@
     </div>
 
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ['twitter.com', 'github.com', 'instagram.com', 'medium.com', 'etherium'],
+      typeSpeed: 50,
+      backSpeed: 20,
+      backDelay: 1500,
+      loop: true,
+    });
+  </script>
 
   {% if site.google_analytics %}
   <script>
