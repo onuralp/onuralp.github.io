@@ -7,7 +7,7 @@
       <div class="large-12 large-centered columns">
         <header class="masthead">
           <h1>Hi, I'm Onuralp Taner</h1>
-          <p>Find me as <strong>@onuralp</strong> on <strong id="typed"></strong></p>
+          <p>Founder &amp; Principal Engineer, Clouxart Ltd</p>
         </header>
       </div>
     </div>
@@ -15,20 +15,29 @@
     <div class="row">
       <div class="large-8 large-left columns">
         <div class="content-section">
-          <p>TL;DR: I help teams to build and deploy cloud-native applications.</p>
           <p>
-            I've been working on cloud computing and distributed systems since 2010. I've worked on a variety of
-            projects, from small startups to giant ( +$1B ) enterprise companies as a Chief Architect.
+            I build AI automations into the systems companies already run, and I lead the small engineering teams that
+            deliver them. I have worked on cloud computing and distributed systems since 2010, for startups and for
+            large companies. I run Clouxart Ltd from Cambridge.
+          </p>
+        </div>
+
+        <div class="content-section">
+          <h2>What I do now</h2>
+          <p>
+            Clouxart Ltd builds and manages AI automation. We connect your tools and automate the work. A three-week
+            Scope comes first, then a Build.<br />
+            <a href="https://clouxart.com">clouxart.com</a>
           </p>
           <p>
-            Focused on Kubernetes, AWS, GCP, serverless, and anything DevOps related. I've been working fully remote
-            since 2018 and living in Cambridge, UK.
+            I organise AI Meetup Cambridge.<br />
+            <a href="https://aimeetup.org">aimeetup.org</a>
           </p>
         </div>
 
         <main>
           <div class="content-section">
-            <h2>Talks</h2>
+            <h2>Talks, 2014–2017</h2>
             <p>
               I love sharing my experiences on software engineering at conferences, meetups, universities and companies.
             </p>
@@ -44,15 +53,13 @@
           <h2>Contact Me</h2>
 
           <p>
-            Follow me on <a href="https://twitter.com/{{ site.twitter }}">Twitter</a>. I’m also on
-            <a href="https://github.com/{{ site.github }}">Github</a> and
-            <a href="https://www.linkedin.com/in/{{ site.linkedin }}/">Linkedin</a>. Feel free to contact.
+            I’m on <a href="https://www.linkedin.com/in/{{ site.linkedin }}/">LinkedIn</a> and
+            <a href="https://github.com/{{ site.github }}">GitHub</a>.
           </p>
 
           <p class="copyright">
-            &copy;
-            <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: '%Y' }}</time>. All rights
-            reserved.
+            &copy; 2026 Onuralp Taner.<br />
+            Clouxart Ltd &middot; Company no. 12833766
           </p>
         </footer>
       </div>
@@ -60,48 +67,16 @@
       <div class="large-2 large-offset-1 columns social">
         <ul>
           <li>
-            <a target="_blank" href="https://twitter.com/{{ site.twitter }}"><i class="fab fa-twitter"></i></a>
-          </li>
-          <li>
-            <a target="_blank" href="https://github.com/{{ site.github }}"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
             <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin }}/"
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </li>
           <li>
-            <a target="_blank" href="https://www.youtube.com/@onuralptaner/"><i class="fab fa-youtube"></i></a>
+            <a target="_blank" href="https://github.com/{{ site.github }}"><i class="fab fa-github"></i></a>
           </li>
-          <li>
-            <a target="_blank" href="https://instagram.com/onuralp/"><i class="fab fa-instagram"></i></a>
-          </li>
-          <!-- <li><a target="_blank" href="https://medium.com/@onuralp/"><i class="fab fa-medium-m"></i></a></li> -->
         </ul>
       </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-      var typed = new Typed('#typed', {
-        strings: [
-          'Twitter',
-          'GitHub',
-          'Instagram',
-          'Telegram',
-          'Medium',
-          'Reddit',
-          'Pinterest',
-          'Superpeer',
-          'Ethereum',
-          'Speaker Deck',
-        ],
-        typeSpeed: 50,
-        backSpeed: 20,
-        backDelay: 1500,
-        loop: true,
-      });
-    </script>
 
     {% if site.google_analytics %}
     <script>

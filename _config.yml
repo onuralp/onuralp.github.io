@@ -3,7 +3,7 @@ permalink:           pretty
 
 # Setup
 title:               Onuralp Taner
-tagline:             Cloud and Software Architect
+tagline:             "Founder & Principal Engineer, Clouxart Ltd"
 url:                 https://onuralp.net
 paginate:            1
 baseurl:             ""
@@ -18,19 +18,18 @@ sass:
 # About/contact
 author:
   name:              Onuralp Taner
-  url:               https://twitter.com/onuralp
+  url:               https://onuralp.net
   email:             onuralp@hotmail.com
 
 # Custom vars
 version:             1.1.0
 google_analytics:    UA-99319481-1
-twitter:             onuralp
 github:              onuralp
 linkedin:            onuralptaner
 
 meta:
   robots:              index, follow
-  keywords:            Onuralp Taner, Cloud Computing, DevOps, Contractor
+  keywords:            Onuralp Taner, Clouxart, AI automation, cloud computing, Cambridge
   classification:      Personal
   expires:             never
   distribution:        Global
