@@ -25,8 +25,8 @@
         <div class="content-section">
           <h2>What I do now</h2>
           <p>
-            Clouxart Ltd builds and manages AI automation. We connect your tools and automate the work. A three-week
-            Scope comes first, then a Build.<br />
+            Clouxart Ltd builds and manages AI automation. We connect your tools and automate the work. A short Scope
+            comes first, then a Build.<br />
             <a href="https://clouxart.com">clouxart.com</a>
           </p>
           <p>
@@ -37,13 +37,13 @@
 
         <main>
           <div class="content-section">
-            <h2>Talks, 2014–2017</h2>
+            <h2>Talks</h2>
             <p>
               I love sharing my experiences on software engineering at conferences, meetups, universities and companies.
             </p>
             {% assign talks = site.posts | where: "type", "talk" %} {% for talk in talks %}
             <div class="talk-post">
-              <p>* {{ talk.title }}</p>
+              <p>* {% if talk.link %}<a href="{{ talk.link }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</p>
             </div>
             {% endfor %}
           </div>
