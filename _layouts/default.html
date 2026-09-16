@@ -8,6 +8,7 @@
         <header class="masthead">
           <h1>Hi, I'm Onuralp Taner</h1>
           <p>Founder &amp; Principal Engineer, Clouxart Ltd</p>
+          <p>Find me as <strong>@onuralp</strong> on <strong id="typed"></strong></p>
         </header>
       </div>
     </div>
@@ -67,16 +68,48 @@
       <div class="large-2 large-offset-1 columns social">
         <ul>
           <li>
+            <a target="_blank" href="https://twitter.com/{{ site.twitter }}"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/{{ site.github }}"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
             <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin }}/"
               ><i class="fab fa-linkedin-in"></i
             ></a>
           </li>
           <li>
-            <a target="_blank" href="https://github.com/{{ site.github }}"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.youtube.com/@onuralptaner/"><i class="fab fa-youtube"></i></a>
           </li>
+          <li>
+            <a target="_blank" href="https://instagram.com/onuralp/"><i class="fab fa-instagram"></i></a>
+          </li>
+          <!-- <li><a target="_blank" href="https://medium.com/@onuralp/"><i class="fab fa-medium-m"></i></a></li> -->
         </ul>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed('#typed', {
+        strings: [
+          'Twitter',
+          'GitHub',
+          'Instagram',
+          'Telegram',
+          'Medium',
+          'Reddit',
+          'Pinterest',
+          'Superpeer',
+          'Ethereum',
+          'Speaker Deck',
+        ],
+        typeSpeed: 50,
+        backSpeed: 20,
+        backDelay: 1500,
+        loop: true,
+      });
+    </script>
 
     {% if site.google_analytics %}
     <script>
